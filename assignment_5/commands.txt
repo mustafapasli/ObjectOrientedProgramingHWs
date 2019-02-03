@@ -1,0 +1,6 @@
+copy /directory0/directory1/directory2/file1 /directory0
+move /directory0/directory1/directory2 /directory0
+copy file4 directory1
+delete directory1
+cd directory2
+delete file1
