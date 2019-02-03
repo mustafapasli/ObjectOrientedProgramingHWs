@@ -1,0 +1,8 @@
+mustafa-MacBook-Pro:assignment_7_mustafapaslı_131044032 mustafapasli$ make
+javac -g DrawSkylinePanel.java
+javac -g Rectangle.java
+javac -g Skyline.java
+javac -g Main.java
+mustafa-MacBook-Pro:assignment_7_mustafapaslı_131044032 mustafapasli$ java Main
+(1, 0), (1, 7), (3, 7), (3, 11), (6, 11), (6, 7), (9, 7), (9, 9), (14, 9), (14, 4), (17, 4), (17, 9), (20, 9), (20, 3), (21, 3), (21, 0)mustafa-MacBook-Pro:assirm -f *.classafapaslı_131044032 mustafapasli$ make clean 
+mustafa-MacBook-Pro:assignment_7_mustafapaslı_131044032 mustafapasli$ 
