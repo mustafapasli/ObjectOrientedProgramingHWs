@@ -1,0 +1,31 @@
+mustafapasli@ubuntu:~$ cd Desktop/
+mustafapasli@ubuntu:~/Desktop$ cd adsız\ klasör/
+mustafapasli@ubuntu:~/Desktop/adsız klasör$ make
+g++    -c -o main.o main.cpp
+g++ -std=c++11 -c Book.cpp
+g++ -std=c++11 -c Catalog.cpp
+g++ -std=c++11 -c Movie.cpp
+g++ -std=c++11 -c Music.cpp
+g++ -std=c++11 main.o Book.o Catalog.o Movie.o Music.o  -o exe
+mustafapasli@ubuntu:~/Desktop/adsız klasör$ ./exe
+mustafapasli@ubuntu:~/Desktop/adsız klasör$ cat output.txt 
+Catalog Read : movie
+Exception : duplicate entry 
+"Twelve Monkeys" "" "" "Sci-Fi, Thriller" " Bruce Willis, Madeleine Stowe, Brad Pitt"
+Exception : duplicate entry 
+"Twelve Monkeys" "" "" "Mystery, Sci-Fi, Thriller" " Bruce Willis, Madeleine Stowe, Brad Pitt"
+Exception : missing field
+"Cold Mountain" "Anthony Minghella" "2003" "Adventure, Drama, History"
+3 unique entries
+search "Monkeys" in "title"
+"Twelve Monkeys" "Terry Gilliam" "1995" "Mystery, Sci-Fi, Thriller" " Bruce Willis, Madeleine Stowe, Brad Pitt"
+Exception: command is wrong
+search "Spice" in "genre"
+sort "year"
+"Twelve Monkeys" "Terry Gilliam" "1995" "Mystery, Sci-Fi, Thriller" " Bruce Willis, Madeleine Stowe, Brad Pitt"
+"The Lord of the Rings: The Fellowship of the Ring" "Peter Jackson" "2001" "Adventure, Drama,Fantasy" "Elijah Wood, Ian McKellen, Orlando Bloom"
+"Perfume: The Story of a Murderer" " Tom Tykwer" "2006" "Crime, Drama, Fantasy" "Ben Whishaw, Dustin Hoffman, Alan Rickman"
+mustafapasli@ubuntu:~/Desktop/adsız klasör$ make clean
+rm *.o exe output.txt
+mustafapasli@ubuntu:~/Desktop/adsız klasör$ 
+
