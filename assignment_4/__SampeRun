@@ -1,0 +1,20 @@
+mustafapasli@ubuntu:~$ cd Desktop/assignment_4_mustafapaslı_131044032/
+mustafapasli@ubuntu:~/Desktop/assignment_4_mustafapaslı_131044032$ make
+g++    -c -o main.o main.cpp
+g++ -std=c++11 -c And.cpp
+g++ -std=c++11 -c Decoder.cpp
+g++ -std=c++11 -c FlipFlop.cpp
+g++ -std=c++11 -c Gate.cpp
+g++ -std=c++11 -c Input.cpp
+g++    -c -o LogicSimulator.o LogicSimulator.cpp
+g++ -std=c++11 -c Not.cpp
+g++    -c -o Or.o Or.cpp
+g++ -std=c++11 -c Output.cpp
+g++ -std=c++11 main.o And.o Decoder.o FlipFlop.o Gate.o Input.o LogicSimulator.o Not.o Or.o Output.o -o exe
+mustafapasli@ubuntu:~/Desktop/assignment_4_mustafapaslı_131044032$ ./exe
+1 0 0 0 
+0 0 0 1 
+1 0 0 0 
+mustafapasli@ubuntu:~/Desktop/assignment_4_mustafapaslı_131044032$ make clean 
+rm *.o exe
+mustafapasli@ubuntu:~/Desktop/assignment_4_mustafapaslı_131044032$ 
